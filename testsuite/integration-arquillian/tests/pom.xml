@@ -176,7 +176,7 @@
                         <properties>
                             <property>
                                 <name>listener</name>
-                                <value>org.keycloak.testsuite.util.TestEventsLogger</value>
+                                <value>org.keycloak.testsuite.util.TestEventsLogger,org.keycloak.testsuite.util.junit.AggregateResultsReporter</value>
                             </property>
                         </properties>
                     </configuration>
@@ -643,6 +643,11 @@
                 </file>
             </activation>
             <dependencies>
+                <dependency>
+                    <groupId>org.keycloak.testsuite</groupId>
+                    <artifactId>integration-arquillian-test-utils</artifactId>
+                    <version>${project.version}</version>
+                </dependency>
                 <!-- TEST DEPENDENCIES -->
                 <dependency>
                     <groupId>junit</groupId>
