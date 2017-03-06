@@ -180,5 +180,10 @@ public class KerberosLdapTest extends AbstractKerberosTest {
         
         throw new RuntimeException("Simulated Exception - To test Jenkins Report Reader");
     }
+    
+    @Test
+    public void testError() {
+        throw new RuntimeException("Simulated Exception - To test Jenkins Report Reader");
+    }
 
 }
