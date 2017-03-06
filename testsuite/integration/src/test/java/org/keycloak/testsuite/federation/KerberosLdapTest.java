@@ -177,6 +177,8 @@ public class KerberosLdapTest extends AbstractKerberosTest {
 
         spnegoResponse.close();
         events.clear();
+        
+        throw new RuntimeException("Simulated Exception - To test Jenkins Report Reader");
     }
 
 }
