@@ -26,7 +26,7 @@ import org.junit.Assert;
 import org.junit.ClassRule;
 import org.junit.Rule;
 import org.junit.Test;
-import org.junit.BeforeClass;
+import org.junit.AfterClass;
 import org.junit.rules.RuleChain;
 import org.junit.rules.TestRule;
 import org.keycloak.events.Details;
@@ -80,9 +80,9 @@ public class KerberosLdapTest extends AbstractKerberosTest {
 
     };
 
-    @BeforeClass
-    public static void beforeClass() {
-        throw new RuntimeException("Before class simulated exveption");
+    @AfterClass
+    public static void afterClass() {
+        throw new RuntimeException("After class simulated exveption");
     }
 
 
